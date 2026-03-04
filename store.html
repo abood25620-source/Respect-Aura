@@ -19,6 +19,37 @@ body{
     text-align:center;
     font-size:26px;
     font-weight:bold;
+    position:relative;
+}
+
+/* ===== زر الرئيسية (صار يسار) ===== */
+.home-btn{
+    position:absolute;
+    left:20px;
+    top:20px;
+    background:#111;
+    color:white;
+    padding:8px 15px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#000;
+    color:#7b2d3a;
+}
+
+/* ===== صورة السيرفر (يمين) ===== */
+.server-logo{
+    position:absolute;
+    right:20px;
+    top:10px;
+}
+
+.server-logo img{
+    height:50px;
 }
 
 /* ===== الحاوية الرئيسية ===== */
@@ -80,37 +111,44 @@ footer{
 <body>
 
 <div class="top-bar">
+
+    <!-- زر الرئيسية (يسار) -->
+    <a class="home-btn" href="index.html">الرئيسية ⬅</a>
+
     Respect Aura | Store
+
+    <!-- صورة السيرفر (يمين) -->
+    <div class="server-logo">
+        <img src="images/logo.png">
+        <!-- غير المسار إلى صورة سيرفرك -->
+    </div>
+
 </div>
 
 <div class="container">
 
     <!-- ######################################################## -->
-    <!-- ##################     هنا تضيف المنتجات     ################## -->
-    <!-- ######################################################## -->
-    <!-- انسخ كرت واحد والصقه تحت وعدل الصورة والاسم والسعر -->
+    <!-- انسخ الكرت تحت وعدل الصورة والاسم والسعر فقط -->
     <!-- ######################################################## -->
 
     <div class="products">
 
-        <!-- ########## منتج رقم 1 ########## -->
+        <!-- منتج 1 -->
         <div class="card">
-            <img src="images/test.png"> <!-- غير الصورة هنا -->
-            <h3>test car</h3> <!-- غير الاسم هنا -->
-            <div class="price">5 ريال</div> <!-- غير السعر هنا -->
+            <img src="images/test.png">
+            <h3>Test Car</h3>
+            <div class="price">5 ريال</div>
         </div>
 
-
-
-        <!-- ########## لو تبي تضيف سيارة جديدة ########## -->
-        <!-- انسخ هذا الكرت والصقه تحت وعدل البيانات -->
+        <!-- مثال إضافة منتج -->
         <!--
         <div class="card">
-            <img src="images/اسم_الصورة.jpg">
-            <h3>اسم المنتج</h3>
-            <div class="price">السعر</div>
+            <img src="images/car2.png">
+            <h3>اسم السيارة</h3>
+            <div class="price">10 ريال</div>
         </div>
         -->
+
     </div>
 
 </div>
